@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MServices.Api</name>
+    </assembly>
+    <members>
+        <member name="M:MServices.Api.Controllers.VeiculoController.Cadastrar(MServices.Domain.Commands.VeiculoCadastroCommand)">
+            <summary>
+            Cadastro de veículo
+            </summary>
+            <param name="command">dados do veículo</param>
+            <returns>situação do processo</returns>
+        </member>
+        <member name="M:MServices.Api.Controllers.VeiculoController.Atualizar(MServices.Domain.Commands.EditarVeiculoCommand)">
+            <summary>
+            Atualizar dados do veículo
+            </summary>
+            <param name="command">dados a serem atualizados</param>
+            <returns>situação do processo</returns>
+        </member>
+        <member name="M:MServices.Api.Controllers.VeiculoController.ObterVeiculoPorChassi(System.String)">
+            <summary>
+            Consulta de veículo por Chassi
+            </summary>
+            <param name="chassi">Número do chassi</param>
+            <returns>Dados do veículo</returns>
+        </member>
+        <member name="M:MServices.Api.Controllers.VeiculoController.ObterTodosVeiculos">
+            <summary>
+            Consulta de todos os veículos cadastrados
+            </summary>
+            <returns>Dados dos veículos cadastrados</returns>
+        </member>
+        <member name="M:MServices.Api.Controllers.VeiculoController.RemoverVeiculo(System.String)">
+            <summary>
+            Remove um veículo cadastrado
+            </summary>
+            <param name="chassi">Número do chassi</param>
+            <returns>situação do processo</returns>
+        </member>
+    </members>
+</doc>
