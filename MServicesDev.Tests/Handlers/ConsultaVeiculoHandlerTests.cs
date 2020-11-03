@@ -6,10 +6,6 @@
 
     using AutoMapper;
 
-    using Microsoft.Extensions.Logging;
-
-    using Moq;
-
     using MServices.Domain.Handlers;
     using MServices.Domain.Models;
     using MServices.Domain.Querys;
