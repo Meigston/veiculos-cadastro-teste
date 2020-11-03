@@ -9,7 +9,7 @@
     using MServices.Domain.Infra.DB;
     using MServices.Domain.Menssages;
     using MServices.Domain.Models;
-    using MServices.Domain.Services.Interfaces;
+    using MServices.Domain.Repositorys.Interfaces;
 
     public class VeiculoRepository : IRepository<Veiculo>
     {

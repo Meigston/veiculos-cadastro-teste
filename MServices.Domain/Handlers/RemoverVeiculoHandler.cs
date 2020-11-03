@@ -11,7 +11,7 @@
     using MServices.Domain.Dtos;
     using MServices.Domain.Menssages;
     using MServices.Domain.Models;
-    using MServices.Domain.Services.Interfaces;
+    using MServices.Domain.Repositorys.Interfaces;
 
     public class RemoverVeiculoHandler : IRequestHandler<RemoverVeiculoCommand, RetornoDto>
     {
@@ -44,6 +44,7 @@
             }
             catch (Exception e)
             {
+                Console.WriteLine(e);
                 resultado.Sucesso = false;
                 resultado.Mensagem = Excecoes.Fail_Remove_Vehicle;
             }

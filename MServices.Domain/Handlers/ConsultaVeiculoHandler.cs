@@ -14,7 +14,7 @@
     using MServices.Domain.Menssages;
     using MServices.Domain.Models;
     using MServices.Domain.Querys;
-    using MServices.Domain.Services.Interfaces;
+    using MServices.Domain.Repositorys.Interfaces;
 
     public class ConsultaVeiculoHandler : IRequestHandler<ConsultaVeiculosTodosQuery, RetornoDto<IEnumerable<VeiculoDto>>>,
                                           IRequestHandler<ConsultaVeiculoChassiQuery, RetornoDto<VeiculoDto>>
@@ -46,6 +46,7 @@
             }
             catch (Exception e)
             {
+                Console.WriteLine(e);
                 resultado.Sucesso = false;
                 resultado.Mensagem = Excecoes.Fail_Search_Vehicles;
             }
@@ -72,6 +73,7 @@
             }
             catch (Exception e)
             {
+                Console.WriteLine(e);
                 resultado.Sucesso = false;
                 resultado.Mensagem = Excecoes.Fail_Search_Vehicles;
             }

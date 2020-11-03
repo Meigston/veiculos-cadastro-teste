@@ -5,7 +5,6 @@ namespace MServices.Api
 
     using AutoMapper;
 
-    using FluentValidation;
     using FluentValidation.AspNetCore;
 
     using MediatR;
@@ -19,14 +18,12 @@ namespace MServices.Api
     using Microsoft.Extensions.PlatformAbstractions;
     using Microsoft.OpenApi.Models;
 
-    using MServices.Api.Validators;
-    using MServices.Domain.Dtos;
     using MServices.Domain.Handlers;
     using MServices.Domain.Infra.DB;
     using MServices.Domain.Mapper;
     using MServices.Domain.Models;
     using MServices.Domain.Repositorys;
-    using MServices.Domain.Services.Interfaces;
+    using MServices.Domain.Repositorys.Interfaces;
 
     public class Startup
     {

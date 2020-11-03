@@ -1,11 +1,9 @@
-﻿namespace MServices.Domain.Services.Interfaces
+﻿namespace MServices.Domain.Repositorys.Interfaces
 {
     using System;
     using System.Collections.Generic;
     using System.Linq.Expressions;
     using System.Threading.Tasks;
-
-    using MServices.Domain.Models;
 
     public interface IRepository<TEntity>
     {
@@ -15,10 +13,10 @@
 
         Task Remover(int id);
 
-        Task<IEnumerable<Veiculo>> ObterTodos();
+        Task<IEnumerable<TEntity>> ObterTodos();
 
-        Task<Veiculo> ObterPorId(int id);
+        Task<TEntity> ObterPorId(int id);
 
-        Task<IEnumerable<Veiculo>> ObterPorExpressao(Expression<Func<TEntity, bool>> expression);
+        Task<IEnumerable<TEntity>> ObterPorExpressao(Expression<Func<TEntity, bool>> expression);
     }
 }
